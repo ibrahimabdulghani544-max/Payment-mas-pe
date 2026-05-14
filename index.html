@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran QRIS</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+      overflow:hidden;
+    }
+
+    .bg{
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1470&auto=format&fit=crop') center/cover;
+      opacity:0.15;
+      filter:blur(2px);
+    }
+
+    .card{
+      position:relative;
+      width:350px;
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,0.2);
+      border-radius:25px;
+      padding:25px;
+      text-align:center;
+      color:white;
+      box-shadow:0 0 25px rgba(0,0,0,0.4);
+      z-index:2;
+    }
+
+    .profile{
+      width:90px;
+      height:90px;
+      border-radius:50%;
+      border:4px solid white;
+      object-fit:cover;
+      margin-bottom:10px;
+    }
+
+    h1{
+      font-size:28px;
+      margin-bottom:5px;
+    }
+
+    p{
+      color:#d1d5db;
+      margin-bottom:20px;
+      font-size:14px;
+    }
+
+    .qris{
+      width:230px;
+      border-radius:20px;
+      background:white;
+      padding:10px;
+      margin-bottom:20px;
+    }
+
+    .dana-box{
+      background:rgba(255,255,255,0.1);
+      padding:12px;
+      border-radius:15px;
+      margin-bottom:15px;
+      border:1px solid rgba(255,255,255,0.2);
+    }
+
+    .dana-box h2{
+      font-size:18px;
+      margin-bottom:5px;
+      color:#38bdf8;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:10px;
+      padding:12px 25px;
+      border-radius:30px;
+      background:#38bdf8;
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#0ea5e9;
+      transform:scale(1.05);
+    }
+
+    .footer{
+      margin-top:15px;
+      font-size:12px;
+      color:#cbd5e1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg"></div>
+
+  <div class="card">
+
+    <!-- LOGO / FOTO PROFIL -->
+    <img src="lala.jpg" class="profile">
+
+    <h1>PAYMENT QRIS</h1>
+    <p>Scan QRIS untuk melakukan pembayaran</p>
+
+    <!-- GANTI DENGAN FOTO QRIS KAMU -->
+    <img src="bar.jpg" class="qris">
+
+    <div class="dana-box">
+      <h2>Nomor DANA</h2>
+      <div>085747919186</div>
+    </div>
+
+    <a href="https://wa.me/6285747919186" class="btn">
+      KONFIRMASI PEMBAYARAN
+    </a>
+
+    <div class="footer">
+      © 2026 Pembayaran Aman
+    </div>
+
+  </div>
+
+</body>
+</html>
